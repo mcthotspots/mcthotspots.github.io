@@ -38,7 +38,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Auto: Update World Bank and Oman facts data'
-          files_pattern: 'data/oman_facts.json'
+          file_pattern: 'data/oman_facts.json'
           # This name/email must match your GitHub account
           commit_user_name: GitHub Actions Bot
           commit_user_email: actions@github.com
