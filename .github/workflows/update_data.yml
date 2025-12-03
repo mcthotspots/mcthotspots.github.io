@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: # <--- ADD THIS BLOCK
+      contents: write # Grants permission to push files back
     
     steps:
       # 1. Checkout your code
