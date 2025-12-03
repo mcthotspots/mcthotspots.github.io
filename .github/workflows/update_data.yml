@@ -1,0 +1,44 @@
+name: Update Oman Facts Data
+
+on:
+  # Run the job every day at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * *'
+  # Allow manual trigger via GitHub UI
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout your code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Required for the action to be able to push changes back
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Setup Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: pip install requests
+
+      # 4. Create data directory (if needed) and run the script
+      - name: Run data fetching script
+        run: python fetch_data.py
+
+      # 5. Commit and push the new JSON file
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Auto: Update World Bank and Oman facts data'
+          files: 'data/oman_facts.json'
+          # This name/email must match your GitHub account
+          commit_user_name: GitHub Actions Bot
+          commit_user_email: actions@github.com
