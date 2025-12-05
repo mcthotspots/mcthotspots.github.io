@@ -1,6 +1,18 @@
 {
     "facts": [
         {
+            "title": "Internet Users (% of Pop)",
+            "value": "95.3%",
+            "year": "2023",
+            "source": "World Bank"
+        },
+        {
+            "title": "Population, Total",
+            "value": "5.05 Million",
+            "year": "2023",
+            "source": "World Bank"
+        },
+        {
             "title": "GDP per Capita (Current US$)",
             "value": "20,972",
             "year": "2023",
@@ -19,5 +31,5 @@
             "source": "Oman Data Portal"
         }
     ],
-    "updated_at": "2025-12-04T01:39:52.176006"
+    "updated_at": "2025-12-05T01:40:09.883458"
 }
