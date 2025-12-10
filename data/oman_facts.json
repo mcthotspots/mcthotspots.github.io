@@ -1,12 +1,6 @@
 {
     "facts": [
         {
-            "title": "Internet Users (% of Pop)",
-            "value": "95.3%",
-            "year": "2023",
-            "source": "World Bank"
-        },
-        {
             "title": "Population, Total",
             "value": "5.05 Million",
             "year": "2023",
@@ -31,5 +25,5 @@
             "source": "Oman Data Portal"
         }
     ],
-    "updated_at": "2025-12-09T01:39:14.282981"
+    "updated_at": "2025-12-10T01:42:01.111823"
 }
