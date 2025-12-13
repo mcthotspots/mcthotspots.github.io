@@ -86,6 +86,54 @@ def get_oman_portal_data():
             "year": "Current",
             "source": "Oman Data Portal"
         },
+        {
+            "title": "Total Population",
+            "value": "5.27 Million",
+            "year": "2024",
+            "source": "National Centre for Statistics and Information"
+        },
+        {
+            "title": "Official Currency",
+            "value": "Omani Rial (OMR)",
+            "year": "Current",
+            "source": "Central Bank of Oman"
+        },
+        {
+            "title": "GDP (Current Prices)",
+            "value": "41.8 Billion OMR",
+            "year": "2023",
+            "source": "World Bank / NCSI"
+        },
+        {
+            "title": "Official Language",
+            "value": "Arabic",
+            "year": "Current",
+            "source": "Basic Statute of the State"
+        },
+        {
+            "title": "Coastline Length",
+            "value": "3,165 km",
+            "year": "Current",
+            "source": "Ministry of Agriculture, Fisheries and Water Resources"
+        },
+        {
+            "title": "Highest Peak",
+            "value": "Jebel Shams (3,009 m)",
+            "year": "Current",
+            "source": "Ministry of Heritage and Tourism"
+        },
+        {
+            "title": "Life Expectancy",
+            "value": "78 Years",
+            "year": "2022",
+            "source": "World Bank"
+        },
+        {
+            "title": "Literacy Rate",
+            "value": "97%",
+            "year": "2023",
+            "source": "UNESCO Institute for Statistics"
+        },
         # You can add more facts if you find a simple API link later
     ]
 

@@ -1,111 +1,155 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* ---------- CSS RESET ---------- */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+    --primary: #0f766e;
+    --secondary: #14b8a6;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --muted: #64748b;
+    --card-bg: #ffffff;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ---------- BASE ---------- */
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(to bottom, #f0fdfa, #ffffff);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ---------- HEADER ---------- */
 header {
-    background: linear-gradient(to right, #004d40, #00796b);
+    background: linear-gradient(
+        rgba(15,118,110,0.85),
+        rgba(15,118,110,0.95)
+    );
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 4rem 1.5rem;
 }
 
-h1 {
-    font-size: 2rem;
-    font-weight: 600;
+header h1 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
 }
 
-/* Home Button */
+/* ---------- HOME BUTTON ---------- */
 .home-button {
     display: inline-block;
     text-decoration: none;
-    background: #00796b;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
     font-size: 1rem;
-    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(20,184,166,0.35);
 }
 
 .home-button:hover {
-    background: #004d40;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(20,184,166,0.45);
 }
 
-/* Button Group Layout */
+/* ---------- BUTTON GROUP ---------- */
 .button-group {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-/* Section */
+/* ---------- SECTIONS ---------- */
 section {
-    padding: 40px;
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 2.5rem 1.5rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
-h2 {
-    color: #00796b;
-    margin-bottom: 20px;
+section h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Website List */
+/* ---------- WEBSITE LIST ---------- */
 .app-list {
     list-style: none;
     padding: 0;
+    display: grid;
+    gap: 1.5rem;
 }
 
 .app-list li {
-    background: #f1f1f1;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 .app-info h3 {
-    color: #00796b;
-    margin-bottom: 10px;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
 }
 
 .app-info p {
+    color: var(--muted);
+    font-size: 1.05rem;
     line-height: 1.6;
-    font-size: 1rem;
 }
 
-/* Website Links */
+/* ---------- WEBSITE LINKS ---------- */
 .app-info a {
     display: inline-block;
     text-decoration: none;
-    background: #00796b;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
+    padding: 0.7rem 1.3rem;
+    border-radius: 999px;
+    font-weight: 600;
     font-size: 1rem;
-    transition: 0.3s ease-in-out;
-    margin-top: 10px;
+    margin-top: 0.8rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 20px rgba(20,184,166,0.35);
 }
 
 .app-info a:hover {
-    background: #004d40;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(20,184,166,0.45);
 }
 
-/* Footer */
+/* ---------- FOOTER ---------- */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #004d40;
+    padding: 1.5rem;
+    background: var(--primary);
     color: white;
-    margin-top: 30px;
+    margin-top: 3rem;
     font-size: 0.9rem;
 }

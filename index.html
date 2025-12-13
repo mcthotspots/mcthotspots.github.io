@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Title Tag for SEO -->
-    <title>Discover Oman - Culture, History & Natural Beauty</title>
+    <title>Discover Muscat – Culture, History & Coastal Beauty</title>
 
     <!-- Meta Description for SEO -->
-    <meta name="description" content="Discover Oman, a country rich in culture, history, and natural beauty. Learn about Oman’s diverse landscapes, vibrant cities, and heritage.">
+    <meta name="description" content="Discover Muscat, the capital of Oman. Explore its culture, history, coastline, forts, souqs, and modern city life.">
 
     <!-- Meta Keywords for SEO -->
     <meta name="keywords" content="Oman, Oman culture, Oman's history, Oman's beauty, Muscat, Omani heritage, travel Oman, visit Oman, desert, mountains, coastline">
@@ -18,8 +18,8 @@
     <meta name="author" content="Discover Oman">
 
     <!-- Open Graph Tags for social media sharing -->
-    <meta property="og:title" content="Discover Oman - Culture, History & Natural Beauty">
-    <meta property="og:description" content="Explore the wonders of Oman, from its rich cultural heritage to its breathtaking natural landscapes.">
+    <meta property="og:title" content="Discover Muscat - Culture, History & Coastal Beauty">
+    <meta property="og:description" content="Explore Muscat’s heritage, sea views, historic forts, and modern lifestyle.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mcthotspots.github.io/">
     <meta property="og:image" content="https://mcthotspots.github.io/assets/image.jpg">
@@ -37,20 +37,27 @@
 </header>
 
 <section>
-    <h2>About Oman</h2>
+    <h2>About Muscat</h2>
     <div class="content">
-        <p>Oman is a country located on the southeastern coast of the Arabian Peninsula, bordered by the United Arab Emirates to the northwest, Saudi Arabia to the west, and Yemen to the south. With a rich cultural heritage, Oman is known for its stunning landscapes, from vast deserts to lush mountains and beautiful coastlines.</p>
+        <p>
+            <span class="highlight">Muscat</span>, the capital city of Oman, is a coastal city where tradition and modern life coexist in harmony. Nestled between the rugged Al Hajar Mountains and the Arabian Sea, Muscat offers a unique blend of natural beauty, cultural heritage, and contemporary development.
+        </p>
 
-        <p>The capital city, <span class="highlight">Muscat</span>, is a thriving port city with a blend of traditional and modern influences. Oman is famous for its friendly people, diverse culture, and historical significance. The country has a long maritime history, which has helped shape its trade routes and relationships with many civilizations.</p>
+        <p>
+            Known for its whitewashed buildings, grand mosques, and historic forts, Muscat has preserved its architectural identity while embracing modernization. Unlike many global capitals, the city maintains a low-rise skyline, reflecting Oman’s commitment to cultural continuity and urban balance.
+        </p>
 
-        <p>Oman has remained a peaceful and neutral country in the region and is known for its stability and hospitality. The country’s natural beauty is complemented by its unique architecture, including forts, palaces, and mosques, which are scattered throughout the country.</p>
+        <p>
+            Muscat has long been an important maritime hub, connecting Oman to East Africa, India, and beyond. This rich seafaring history has shaped the city’s diverse culture, cuisine, and welcoming spirit. Visitors can explore traditional souqs, scenic corniches, and world-class cultural landmarks.
+        </p>
 
-        <p>Whether you're exploring the desert, visiting the ancient forts, or enjoying the coastline, Oman offers an unforgettable experience for travelers seeking a mix of adventure, culture, and relaxation.</p>
+        <p>
+            Whether you are exploring Mutrah’s historic waterfront, hiking nearby wadis, or enjoying the calm beaches along the coast, Muscat offers an experience that is authentic, peaceful, and deeply connected to Oman’s heritage.
+        </p>
 
-        <!-- Buttons linking to separate pages -->
         <div class="buttons">
-            <a href="oman-top-apps.html"><button class="btn">Oman's Top Apps</button></a>
-            <a href="oman-top-websites.html"><button class="btn">Oman’s Top Websites</button></a>
+            <a href="oman-top-apps.html"><button class="btn">Muscat Useful Apps</button></a>
+            <a href="oman-top-websites.html"><button class="btn">Muscat Websites</button></a>
         </div>
     </div>
 </section>
@@ -59,21 +66,6 @@
     <h2>📊 Oman Key Facts & Statistics</h2>
     <div class="facts-container">
         <p id="loading-message">Loading latest data...</p>
-    </div>
-</section>
-    
-<section class="map-section">
-    <h2>Map of Oman</h2>
-    <div class="map-container">
-        <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2148933.9169216075!2d54.36612363225445!3d21.473532992216797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3dd7e12cb80c3db3%3A0x2f4e0e2dddb6a4c3!2sOman!5e0!3m2!1sen!2som!4v1718012345678!5m2!1sen!2som"
-                width="100%"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
     </div>
 </section>
 
@@ -107,15 +99,6 @@
             });
 
             factsContainer.appendChild(factsGrid);
-            
-            // Add a small update note
-            const updateTime = new Date(data.updated_at).toLocaleString('en-US', {
-                dateStyle: 'medium',
-                timeStyle: 'short'
-            });
-            const footerNote = document.createElement('p');
-            footerNote.innerHTML = `<small>Last updated automatically on: <strong>${updateTime}</strong></small>`;
-            factsContainer.appendChild(footerNote);
         };
 
         // Fetch the JSON file generated by GitHub Actions
