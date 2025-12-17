@@ -14,7 +14,7 @@
         },
         {
             "title": "GDP per Capita (Current US$)",
-            "value": "20,972",
+            "value": "21,027",
             "year": "2023",
             "source": "World Bank"
         },
@@ -79,5 +79,5 @@
             "source": "UNESCO Institute for Statistics"
         }
     ],
-    "updated_at": "2025-12-16T01:42:55.720059"
+    "updated_at": "2025-12-17T01:38:27.097533"
 }
