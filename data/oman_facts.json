@@ -3,19 +3,19 @@
         {
             "title": "Internet Users (% of Pop)",
             "value": "95.3%",
-            "year": "2023",
+            "year": "2024",
             "source": "World Bank"
         },
         {
             "title": "Population, Total",
-            "value": "5.05 Million",
-            "year": "2023",
+            "value": "5.28 Million",
+            "year": "2024",
             "source": "World Bank"
         },
         {
             "title": "GDP per Capita (Current US$)",
-            "value": "21,027",
-            "year": "2023",
+            "value": "20,285",
+            "year": "2024",
             "source": "World Bank"
         },
         {
@@ -79,5 +79,5 @@
             "source": "UNESCO Institute for Statistics"
         }
     ],
-    "updated_at": "2025-12-31T01:43:41.962615"
+    "updated_at": "2026-01-01T01:53:21.599593"
 }
