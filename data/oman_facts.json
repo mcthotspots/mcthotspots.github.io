@@ -7,12 +7,6 @@
             "source": "World Bank"
         },
         {
-            "title": "Population, Total",
-            "value": "5.28 Million",
-            "year": "2024",
-            "source": "World Bank"
-        },
-        {
             "title": "GDP per Capita (Current US$)",
             "value": "20,285",
             "year": "2024",
@@ -79,5 +73,5 @@
             "source": "UNESCO Institute for Statistics"
         }
     ],
-    "updated_at": "2026-02-26T02:03:46.787494"
+    "updated_at": "2026-02-27T02:03:06.815623"
 }
